@@ -65,5 +65,5 @@ jobs:
         cf_org: ${{ secrets.CF_ORG_IBM }}
         cf_space: ${{ secrets.CF_SPACE_IBM }}
         command: >
-          push rouroux -f manifest-ibm.yml
+          push -f manifest-ibm.yml
           
