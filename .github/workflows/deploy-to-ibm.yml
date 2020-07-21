@@ -49,7 +49,7 @@ jobs:
         cat > manifest-ibm.yml << EOF
         ---
         applications:
-        - name: rouroux
+        - name: wzy
           memory: 256M
           random-route: true
           command: ./v2ray
