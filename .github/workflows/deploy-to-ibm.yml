@@ -49,9 +49,8 @@ jobs:
         cat > manifest-ibm.yml << EOF
         ---
         applications:
-        - name: v2ws
-          memory: 128M
-          disk_quota: 128M
+        - name: rouroux
+          memory: 256M
           random-route: true
           command: ./v2ray
           buildpacks:
@@ -66,5 +65,5 @@ jobs:
         cf_org: ${{ secrets.CF_ORG_IBM }}
         cf_space: ${{ secrets.CF_SPACE_IBM }}
         command: >
-          push v2ws -f manifest-ibm.yml
+          push rouroux -f manifest-ibm.yml
           
